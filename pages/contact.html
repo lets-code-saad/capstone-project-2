@@ -38,41 +38,52 @@
 
 
         <!-- Nav Bar -->
-        <nav class="bg-white shadow-sm">
-            <div class="container d-flex flex-wrap mb-10 justify-content-between align-items-center ">
-            <h4 class="t-success fw-bolder">VEGEFOODS</h4>
-            <ul
-                class="d-flex flex-wrap list-unstyled mt-3 align-items-center gap-4 fs-11 ls-2 text-uppercase">
-                <li><a class="text-decoration-none text-black" href="/index.html">Home</a></li>
-                <div class="dropdown d-flex flex-wrap align-items-center pt-3">
-                    <p class="btn text-uppercase fs-11 ls-2 dropdown-toggle border-0" type="p"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Shop
-                    </p>
-                    <ul class="dropdown-menu border-0 fs-12">
-                        <li><a class="dropdown-item" href="/pages/shop.html" >Shop</a></li>
-                        <li><a class="dropdown-item" href="/pages/wishlist.html" >Wishlist</a></li>
-                        <li><a class="dropdown-item" href="/pages/singleprod.html" >Single Product</a></li>
-                        <li><a class="dropdown-item" href="/pages/cart.html" >Cart</a></li>
-                        <li><a class="dropdown-item" href="/pages/checkout.html" >Checkout</a></li>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed mb-10 w-100 z-1">
+            <div class="container justify-content-between">
+              <a class="navbar-brand fw-bold fs-3 t-success text-uppercase text-color-hover" href="#">Vegefoods</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ls-2 gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link fs-11 fw-medium text-uppercase" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase fs-11 fw-medium text-uppercase" href="/pages/shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu fs-12 fw-medium text-uppercase border-0">
+                      <li><a class="dropdown-item" href="/pages/shop.html">Shop</a></li>
+                      <li><a class="dropdown-item" href="/pages/wishlist.html">Wishlist</a></li>
+                      <li><a class="dropdown-item" href="/pages/singleprod.html">Single Product</a></li>
+                      <li><a class="dropdown-item" href="/pages/cart.html">Cart</a></li>
+                      <li><a class="dropdown-item" href="/pages/checkout.html">Checkout</a></li>
                     </ul>
-                </div>
-                <li><a class="text-black" href="/pages/about.html" >About</a></li>
-                <li><a class="text-black" href="/pages/blog.html" >Blog</a></li>
-                <li><a class="t-success" href="">Contact</a></li>
-                <div class="shoped-items d-flex align-items-center">
-                    <a class="text-black" href="/pages/cart.html"  ><iconify-icon icon="mdi:local-grocery-store"></iconify-icon></a>
-                    <li><a class="text-black" href="/pages/cart.html" >[0]</a></li>
-                </div>
-                </div>
-            </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-11 text-uppercase fw-medium" href="/Pages/About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-11 text-uppercase fw-medium" href="/Pages/Blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-11 text-uppercase fw-medium t-success" href="">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-11 text-color text-uppercase fw-medium" href="/Pages/Cart.html"><iconify-icon icon="tdesign:cart"></iconify-icon> [0]</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
     </div>
 
 
     <!-- Main Screen -->
     <main>
-        <div id="carouselExampleSlidesOnly" class="carousel slide pt-120" data-bs-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide pt-100" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active about-carousel-1 position-relative row">
                     <div class="position-absolute start-50 top-50 translate-middle">
@@ -116,7 +127,7 @@
 
 
 <!-- Footer Section -->
-<footer class="mt-5 pt-5 container">
+<footer class="mt-5 pt-5 container position-relative">
     <div class="all-footers row gap-5">
         <div class="footer-1 col-lg-3 col-md-2 col-sm-12">
             <h4 class="fs-16">Vegefoods</h4>
@@ -155,6 +166,9 @@
                 <iconify-icon class="fs-18" icon="weui:email-filled"></iconify-icon>
                 <p class="fs-14 cursor-pointer">info@yourdomain.com</p>
             </div>
+        </div>
+        <div id="pull-icon" class="text-center">
+            <a href=""><iconify-icon class="b-success text-white border-0 rounded-circle fs-60 position-absolute fw-light bottom-100 translate-middle cursor-pointer align-items-center" icon="iconamoon:arrow-up-2-light"></iconify-icon></a>
         </div>
     </div>
     <p class="text-center mt-5 pt-5 mb-5 justify-content-center gap-1">Copyright ©2024 All rights reserved | This template is made with <iconify-icon class="fs-14" icon="mdi:heart"></iconify-icon> by <span class="t-success fw-medium">Colorlib</span></p>
